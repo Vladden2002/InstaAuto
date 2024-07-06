@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_selenium.SampleController">
+
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #FFF6E9;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="75.0" layoutY="103.0">
+               <image>
+                  <Image url="@../../../../../../../Downloads/logoApp.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="99.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSTAFLOW" wrappingWidth="151.8323974609375">
+               <font>
+                  <Font name="High Tower Text" size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="95.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GROW SMARTER, FOLLOW FASTER" wrappingWidth="158.9210205078125">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="436.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField layoutX="102.0" layoutY="250.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #40A2E3; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField layoutX="102.0" layoutY="285.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #40A2E3; -fx-border-width: 0px 0px 2px 0px;" />
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="77.0" layoutY="254.0">
+               <image>
+                  <Image url="@../../../../../../../Downloads/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="77.0" layoutY="287.0">
+               <image>
+                  <Image url="@../../../../../../../Downloads/padlock.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="116.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" wrappingWidth="103.46217727661133">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="99.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login with Instagram">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Text>
+				<Button fx:id="loginButton" layoutX="141.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+            <CheckBox layoutX="77.0" layoutY="325.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="170.0" text="Accept Terms and Conditions">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </CheckBox>
+            <Icon content="CLOSE" layoutX="313.0" layoutY="14.0" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
