@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.centered-pane {
+    -fx-alignment: center;
+    -fx-padding: 50;
+    -fx-background-color: yellow;
+}

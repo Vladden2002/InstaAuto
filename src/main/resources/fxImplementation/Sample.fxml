@@ -38,8 +38,8 @@
    <right>
       <AnchorPane prefHeight="500.0" prefWidth="436.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField layoutX="102.0" layoutY="250.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #40A2E3; -fx-border-width: 0px 0px 2px 0px;" />
-            <PasswordField layoutX="102.0" layoutY="285.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #40A2E3; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="usernameField" layoutX="102.0" layoutY="250.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #40A2E3; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="passwordField" layoutX="102.0" layoutY="285.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #40A2E3; -fx-border-width: 0px 0px 2px 0px;" />
             <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="77.0" layoutY="254.0">
                <image>
                   <Image url="@../../../../../../../Downloads/user.png" />
@@ -60,13 +60,14 @@
                   <Font name="Times New Roman" size="16.0" />
                </font>
             </Text>
-				<Button fx:id="loginButton" layoutX="141.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
-            <CheckBox layoutX="77.0" layoutY="325.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="170.0" text="Accept Terms and Conditions">
+            <Button fx:id="loginButton" layoutX="141.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+            <CheckBox fx:id="termsCheckbox" layoutX="77.0" layoutY="325.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="170.0" text="Accept Terms and Conditions">
                <font>
                   <Font size="10.0" />
                </font>
             </CheckBox>
             <Icon content="CLOSE" layoutX="313.0" layoutY="14.0" />
+            <Button fx:id="testButton" layoutX="142.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleTestButtonAction" text="test" />
          </children>
       </AnchorPane>
    </right>
